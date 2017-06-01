@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Pokedex
 {
-    public partial class Form1 : Form
+    public partial class Detailview : Form
     {
-        public Form1()
+        public Detailview()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ButtonZurück_Click(object sender, EventArgs e)
         {
 
         }
