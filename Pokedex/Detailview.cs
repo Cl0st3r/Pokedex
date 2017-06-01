@@ -19,7 +19,7 @@ namespace Pokedex
 
         private void ButtonZurück_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
         }
     }
 }
