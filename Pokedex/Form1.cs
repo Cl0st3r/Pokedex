@@ -13,8 +13,7 @@ namespace Pokedex
 {
     public partial class Form1 : Form
     {
-        OleDbConnection con;
-        OleDbCommand com;
+        
         public Form1()
         {
             InitializeComponent();
