@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace Pokedex
 {
     public partial class Form1 : Form
     {
+        OleDbConnection con;
+        OleDbCommand com;
         public Form1()
         {
             InitializeComponent();

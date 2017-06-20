@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex", "Pokedex\Pokedex.csproj", "{BBCCCB72-346C-4EF0-B126-2A8FAB3AB77B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D2C94F88-0196-4816-B92F-C12AD13F7D37}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\Pokedex.accdb = ..\..\..\Downloads\Pokedex.accdb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
