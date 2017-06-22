@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DbPath" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbPath (Settings)" PropertyReference="ApplicationSettings.Pokedex.Properties.Settings.GlobalReference.Default.DbPath" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DbPathSchool" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbPathSchool (Settings)" PropertyReference="ApplicationSettings.Pokedex.Properties.Settings.GlobalReference.Default.DbPathSchool" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PokemonTableAdapter" GeneratorDataComponentClassName="PokemonTableAdapter" Name="Pokemon" UserDataComponentName="PokemonTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DbPath (Settings)" DbObjectName="Pokemon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DbPathSchool (Settings)" DbObjectName="Pokemon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Pokemon` WHERE ((`ID` = ?) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)) AND ((? = 1 AND `Typ` IS NULL) OR (`Typ` = ?)) AND ((? = 1 AND `Gewicht` IS NULL) OR (`Gewicht` = ?)) AND ((? = 1 AND `Größe` IS NULL) OR (`Größe` = ?)) AND ((? = 1 AND `Kategorie` IS NULL) OR (`Kategorie` = ?)) AND ((? = 1 AND `Evolutionsstufe` IS NULL) OR (`Evolutionsstufe` = ?)) AND ((? = 1 AND `Basispokemon` IS NULL) OR (`Basispokemon` = ?)) AND ((? = 1 AND `Geschlecht` IS NULL) OR (`Geschlecht` = ?)) AND ((? = 1 AND `Fähigkeit` IS NULL) OR (`Fähigkeit` = ?)))</CommandText>
@@ -114,7 +114,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Pokemon_TypTableAdapter" GeneratorDataComponentClassName="Pokemon_TypTableAdapter" Name="Pokemon_Typ" UserDataComponentName="Pokemon_TypTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DbPath (Settings)" DbObjectName="Pokemon_Typ" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DbPathSchool (Settings)" DbObjectName="Pokemon_Typ" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Pokemon_Typ` WHERE ((`ID` = ?) AND ((? = 1 AND `PokemonNr` IS NULL) OR (`PokemonNr` = ?)) AND ((? = 1 AND `TypNr` IS NULL) OR (`TypNr` = ?)))</CommandText>
@@ -167,7 +167,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TypenTableAdapter" GeneratorDataComponentClassName="TypenTableAdapter" Name="Typen" UserDataComponentName="TypenTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DbPath (Settings)" DbObjectName="Typen" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DbPathSchool (Settings)" DbObjectName="Typen" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Typen` WHERE ((`ID` = ?))</CommandText>

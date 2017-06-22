@@ -2395,7 +2395,7 @@ namespace Pokedex.PokedexDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::Pokedex.Properties.Settings.Default.DbPath;
+            this._connection.ConnectionString = global::Pokedex.Properties.Settings.Default.DbPathSchool;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2972,7 +2972,7 @@ namespace Pokedex.PokedexDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::Pokedex.Properties.Settings.Default.DbPath;
+            this._connection.ConnectionString = global::Pokedex.Properties.Settings.Default.DbPathSchool;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3327,7 +3327,7 @@ namespace Pokedex.PokedexDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::Pokedex.Properties.Settings.Default.DbPath;
+            this._connection.ConnectionString = global::Pokedex.Properties.Settings.Default.DbPathSchool;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -28,55 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pokedexDataSet1 = new Pokedex.PokedexDataSet();
-            this.pokemon_TypTableAdapter1 = new Pokedex.PokedexDataSetTableAdapters.Pokemon_TypTableAdapter();
-            this.pokemonTableAdapter1 = new Pokedex.PokedexDataSetTableAdapters.PokemonTableAdapter();
-            this.typenTableAdapter1 = new Pokedex.PokedexDataSetTableAdapters.TypenTableAdapter();
+            this.pokedexDataSet = new Pokedex.PokedexDataSet();
+            this.pokedexDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pokemonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pokemonTableAdapter = new Pokedex.PokedexDataSetTableAdapters.PokemonTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 0);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.pokemonBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1145, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(270, 447);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // pokedexDataSet1
+            // pokedexDataSet
             // 
-            this.pokedexDataSet1.DataSetName = "PokedexDataSet";
-            this.pokedexDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.pokedexDataSet.DataSetName = "PokedexDataSet";
+            this.pokedexDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pokemon_TypTableAdapter1
+            // pokedexDataSetBindingSource
             // 
-            this.pokemon_TypTableAdapter1.ClearBeforeFill = true;
+            this.pokedexDataSetBindingSource.DataSource = this.pokedexDataSet;
+            this.pokedexDataSetBindingSource.Position = 0;
             // 
-            // pokemonTableAdapter1
+            // pokemonBindingSource
             // 
-            this.pokemonTableAdapter1.ClearBeforeFill = true;
+            this.pokemonBindingSource.DataMember = "Pokemon";
+            this.pokemonBindingSource.DataSource = this.pokedexDataSetBindingSource;
             // 
-            // typenTableAdapter1
+            // pokemonTableAdapter
             // 
-            this.typenTableAdapter1.ClearBeforeFill = true;
+            this.pokemonTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 550);
+            this.ClientSize = new System.Drawing.Size(305, 550);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,10 +107,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private PokedexDataSet pokedexDataSet1;
-        private PokedexDataSetTableAdapters.Pokemon_TypTableAdapter pokemon_TypTableAdapter1;
-        private PokedexDataSetTableAdapters.PokemonTableAdapter pokemonTableAdapter1;
-        private PokedexDataSetTableAdapters.TypenTableAdapter typenTableAdapter1;
+        private System.Windows.Forms.BindingSource pokedexDataSetBindingSource;
+        private PokedexDataSet pokedexDataSet;
+        private System.Windows.Forms.BindingSource pokemonBindingSource;
+        private PokedexDataSetTableAdapters.PokemonTableAdapter pokemonTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
     }
 }
 
