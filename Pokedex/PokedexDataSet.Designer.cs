@@ -365,15 +365,15 @@ namespace Pokedex {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnName;
+            private global::System.Data.DataColumn columnPokName;
             
-            private global::System.Data.DataColumn columnTyp;
+            private global::System.Data.DataColumn columnPokTyp;
             
             private global::System.Data.DataColumn columnBeschreibung;
             
             private global::System.Data.DataColumn columnGewicht;
             
-            private global::System.Data.DataColumn columnGröße;
+            private global::System.Data.DataColumn columnGroesse;
             
             private global::System.Data.DataColumn columnKategorie;
             
@@ -383,7 +383,7 @@ namespace Pokedex {
             
             private global::System.Data.DataColumn columnGeschlecht;
             
-            private global::System.Data.DataColumn columnFähigkeit;
+            private global::System.Data.DataColumn columnFaehigkeit;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -428,17 +428,17 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NameColumn {
+            public global::System.Data.DataColumn PokNameColumn {
                 get {
-                    return this.columnName;
+                    return this.columnPokName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TypColumn {
+            public global::System.Data.DataColumn PokTypColumn {
                 get {
-                    return this.columnTyp;
+                    return this.columnPokTyp;
                 }
             }
             
@@ -460,9 +460,9 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn GrößeColumn {
+            public global::System.Data.DataColumn GroesseColumn {
                 get {
-                    return this.columnGröße;
+                    return this.columnGroesse;
                 }
             }
             
@@ -500,9 +500,9 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FähigkeitColumn {
+            public global::System.Data.DataColumn FaehigkeitColumn {
                 get {
-                    return this.columnFähigkeit;
+                    return this.columnFaehigkeit;
                 }
             }
             
@@ -543,20 +543,20 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PokemonRow AddPokemonRow(string Name, int Typ, string Beschreibung, int Gewicht, int Größe, string Kategorie, int Evolutionsstufe, string Basispokemon, string Geschlecht, string Fähigkeit) {
+            public PokemonRow AddPokemonRow(string PokName, int PokTyp, string Beschreibung, int Gewicht, int Groesse, string Kategorie, int Evolutionsstufe, string Basispokemon, string Geschlecht, string Faehigkeit) {
                 PokemonRow rowPokemonRow = ((PokemonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Name,
-                        Typ,
+                        PokName,
+                        PokTyp,
                         Beschreibung,
                         Gewicht,
-                        Größe,
+                        Groesse,
                         Kategorie,
                         Evolutionsstufe,
                         Basispokemon,
                         Geschlecht,
-                        Fähigkeit};
+                        Faehigkeit};
                 rowPokemonRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPokemonRow);
                 return rowPokemonRow;
@@ -587,16 +587,16 @@ namespace Pokedex {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnName = base.Columns["Name"];
-                this.columnTyp = base.Columns["Typ"];
+                this.columnPokName = base.Columns["PokName"];
+                this.columnPokTyp = base.Columns["PokTyp"];
                 this.columnBeschreibung = base.Columns["Beschreibung"];
                 this.columnGewicht = base.Columns["Gewicht"];
-                this.columnGröße = base.Columns["Größe"];
+                this.columnGroesse = base.Columns["Groesse"];
                 this.columnKategorie = base.Columns["Kategorie"];
                 this.columnEvolutionsstufe = base.Columns["Evolutionsstufe"];
                 this.columnBasispokemon = base.Columns["Basispokemon"];
                 this.columnGeschlecht = base.Columns["Geschlecht"];
-                this.columnFähigkeit = base.Columns["Fähigkeit"];
+                this.columnFaehigkeit = base.Columns["Faehigkeit"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -604,16 +604,16 @@ namespace Pokedex {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnName);
-                this.columnTyp = new global::System.Data.DataColumn("Typ", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTyp);
+                this.columnPokName = new global::System.Data.DataColumn("PokName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPokName);
+                this.columnPokTyp = new global::System.Data.DataColumn("PokTyp", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPokTyp);
                 this.columnBeschreibung = new global::System.Data.DataColumn("Beschreibung", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBeschreibung);
                 this.columnGewicht = new global::System.Data.DataColumn("Gewicht", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGewicht);
-                this.columnGröße = new global::System.Data.DataColumn("Größe", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGröße);
+                this.columnGroesse = new global::System.Data.DataColumn("Groesse", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGroesse);
                 this.columnKategorie = new global::System.Data.DataColumn("Kategorie", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnKategorie);
                 this.columnEvolutionsstufe = new global::System.Data.DataColumn("Evolutionsstufe", typeof(int), null, global::System.Data.MappingType.Element);
@@ -622,8 +622,8 @@ namespace Pokedex {
                 base.Columns.Add(this.columnBasispokemon);
                 this.columnGeschlecht = new global::System.Data.DataColumn("Geschlecht", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGeschlecht);
-                this.columnFähigkeit = new global::System.Data.DataColumn("Fähigkeit", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFähigkeit);
+                this.columnFaehigkeit = new global::System.Data.DataColumn("Faehigkeit", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFaehigkeit);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -631,12 +631,12 @@ namespace Pokedex {
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.columnName.MaxLength = 255;
+                this.columnPokName.MaxLength = 255;
                 this.columnBeschreibung.MaxLength = 536870910;
                 this.columnKategorie.MaxLength = 255;
                 this.columnBasispokemon.MaxLength = 255;
                 this.columnGeschlecht.MaxLength = 255;
-                this.columnFähigkeit.MaxLength = 255;
+                this.columnFaehigkeit.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1451,33 +1451,33 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Name {
+            public string PokName {
                 get {
                     try {
-                        return ((string)(this[this.tablePokemon.NameColumn]));
+                        return ((string)(this[this.tablePokemon.PokNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte Name in Tabelle Pokemon ist DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte PokName in Tabelle Pokemon ist DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePokemon.NameColumn] = value;
+                    this[this.tablePokemon.PokNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Typ {
+            public int PokTyp {
                 get {
                     try {
-                        return ((int)(this[this.tablePokemon.TypColumn]));
+                        return ((int)(this[this.tablePokemon.PokTypColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte Typ in Tabelle Pokemon ist DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte PokTyp in Tabelle Pokemon ist DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePokemon.TypColumn] = value;
+                    this[this.tablePokemon.PokTypColumn] = value;
                 }
             }
             
@@ -1515,17 +1515,17 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Größe {
+            public int Groesse {
                 get {
                     try {
-                        return ((int)(this[this.tablePokemon.GrößeColumn]));
+                        return ((int)(this[this.tablePokemon.GroesseColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte Größe in Tabelle Pokemon ist DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte Groesse in Tabelle Pokemon ist DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePokemon.GrößeColumn] = value;
+                    this[this.tablePokemon.GroesseColumn] = value;
                 }
             }
             
@@ -1595,42 +1595,42 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Fähigkeit {
+            public string Faehigkeit {
                 get {
                     try {
-                        return ((string)(this[this.tablePokemon.FähigkeitColumn]));
+                        return ((string)(this[this.tablePokemon.FaehigkeitColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte Fähigkeit in Tabelle Pokemon ist DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Der Wert für Spalte Faehigkeit in Tabelle Pokemon ist DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePokemon.FähigkeitColumn] = value;
+                    this[this.tablePokemon.FaehigkeitColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNameNull() {
-                return this.IsNull(this.tablePokemon.NameColumn);
+            public bool IsPokNameNull() {
+                return this.IsNull(this.tablePokemon.PokNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNameNull() {
-                this[this.tablePokemon.NameColumn] = global::System.Convert.DBNull;
+            public void SetPokNameNull() {
+                this[this.tablePokemon.PokNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTypNull() {
-                return this.IsNull(this.tablePokemon.TypColumn);
+            public bool IsPokTypNull() {
+                return this.IsNull(this.tablePokemon.PokTypColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTypNull() {
-                this[this.tablePokemon.TypColumn] = global::System.Convert.DBNull;
+            public void SetPokTypNull() {
+                this[this.tablePokemon.PokTypColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1659,14 +1659,14 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGrößeNull() {
-                return this.IsNull(this.tablePokemon.GrößeColumn);
+            public bool IsGroesseNull() {
+                return this.IsNull(this.tablePokemon.GroesseColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGrößeNull() {
-                this[this.tablePokemon.GrößeColumn] = global::System.Convert.DBNull;
+            public void SetGroesseNull() {
+                this[this.tablePokemon.GroesseColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1719,14 +1719,14 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFähigkeitNull() {
-                return this.IsNull(this.tablePokemon.FähigkeitColumn);
+            public bool IsFaehigkeitNull() {
+                return this.IsNull(this.tablePokemon.FaehigkeitColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFähigkeitNull() {
-                this[this.tablePokemon.FähigkeitColumn] = global::System.Convert.DBNull;
+            public void SetFaehigkeitNull() {
+                this[this.tablePokemon.FaehigkeitColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2306,30 +2306,30 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Pokemon";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("Name", "Name");
-            tableMapping.ColumnMappings.Add("Typ", "Typ");
+            tableMapping.ColumnMappings.Add("PokName", "PokName");
+            tableMapping.ColumnMappings.Add("PokTyp", "PokTyp");
             tableMapping.ColumnMappings.Add("Beschreibung", "Beschreibung");
             tableMapping.ColumnMappings.Add("Gewicht", "Gewicht");
-            tableMapping.ColumnMappings.Add("Größe", "Größe");
+            tableMapping.ColumnMappings.Add("Groesse", "Groesse");
             tableMapping.ColumnMappings.Add("Kategorie", "Kategorie");
             tableMapping.ColumnMappings.Add("Evolutionsstufe", "Evolutionsstufe");
             tableMapping.ColumnMappings.Add("Basispokemon", "Basispokemon");
             tableMapping.ColumnMappings.Add("Geschlecht", "Geschlecht");
-            tableMapping.ColumnMappings.Add("Fähigkeit", "Fähigkeit");
+            tableMapping.ColumnMappings.Add("Faehigkeit", "Faehigkeit");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Pokemon` WHERE ((`ID` = ?) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)) AND ((? = 1 AND `Typ` IS NULL) OR (`Typ` = ?)) AND ((? = 1 AND `Gewicht` IS NULL) OR (`Gewicht` = ?)) AND ((? = 1 AND `Größe` IS NULL) OR (`Größe` = ?)) AND ((? = 1 AND `Kategorie` IS NULL) OR (`Kategorie` = ?)) AND ((? = 1 AND `Evolutionsstufe` IS NULL) OR (`Evolutionsstufe` = ?)) AND ((? = 1 AND `Basispokemon` IS NULL) OR (`Basispokemon` = ?)) AND ((? = 1 AND `Geschlecht` IS NULL) OR (`Geschlecht` = ?)) AND ((? = 1 AND `Fähigkeit` IS NULL) OR (`Fähigkeit` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Pokemon` WHERE ((`ID` = ?) AND ((? = 1 AND `PokName` IS NULL) OR (`PokName` = ?)) AND ((? = 1 AND `PokTyp` IS NULL) OR (`PokTyp` = ?)) AND ((? = 1 AND `Gewicht` IS NULL) OR (`Gewicht` = ?)) AND ((? = 1 AND `Groesse` IS NULL) OR (`Groesse` = ?)) AND ((? = 1 AND `Kategorie` IS NULL) OR (`Kategorie` = ?)) AND ((? = 1 AND `Evolutionsstufe` IS NULL) OR (`Evolutionsstufe` = ?)) AND ((? = 1 AND `Basispokemon` IS NULL) OR (`Basispokemon` = ?)) AND ((? = 1 AND `Geschlecht` IS NULL) OR (`Geschlecht` = ?)) AND ((? = 1 AND `Faehigkeit` IS NULL) OR (`Faehigkeit` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Name", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Typ", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Typ", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Typ", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Typ", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PokName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokName", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_PokName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokName", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PokTyp", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokTyp", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_PokTyp", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokTyp", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Gewicht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gewicht", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Gewicht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gewicht", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Größe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Größe", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Größe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Größe", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Groesse", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Groesse", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Groesse", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Groesse", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Kategorie", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kategorie", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Kategorie", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kategorie", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Evolutionsstufe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Evolutionsstufe", global::System.Data.DataRowVersion.Original, true, null));
@@ -2338,47 +2338,47 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Basispokemon", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Basispokemon", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Geschlecht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Geschlecht", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Geschlecht", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Geschlecht", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Fähigkeit", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Fähigkeit", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Fähigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Fähigkeit", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Faehigkeit", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Faehigkeit", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Faehigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Faehigkeit", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Pokemon` (`Name`, `Typ`, `Beschreibung`, `Gewicht`, `Größe`, `Katego" +
-                "rie`, `Evolutionsstufe`, `Basispokemon`, `Geschlecht`, `Fähigkeit`) VALUES (?, ?" +
-                ", ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Pokemon` (`PokName`, `PokTyp`, `Beschreibung`, `Gewicht`, `Groesse`," +
+                " `Kategorie`, `Evolutionsstufe`, `Basispokemon`, `Geschlecht`, `Faehigkeit`) VAL" +
+                "UES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Typ", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Typ", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PokName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokName", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PokTyp", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokTyp", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Beschreibung", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Beschreibung", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gewicht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gewicht", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Größe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Größe", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Groesse", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Groesse", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Kategorie", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kategorie", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Evolutionsstufe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Evolutionsstufe", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Basispokemon", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Basispokemon", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Geschlecht", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Geschlecht", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Fähigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Fähigkeit", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Faehigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Faehigkeit", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Pokemon` SET `Name` = ?, `Typ` = ?, `Beschreibung` = ?, `Gewicht` = ?, `Größe` = ?, `Kategorie` = ?, `Evolutionsstufe` = ?, `Basispokemon` = ?, `Geschlecht` = ?, `Fähigkeit` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)) AND ((? = 1 AND `Typ` IS NULL) OR (`Typ` = ?)) AND ((? = 1 AND `Gewicht` IS NULL) OR (`Gewicht` = ?)) AND ((? = 1 AND `Größe` IS NULL) OR (`Größe` = ?)) AND ((? = 1 AND `Kategorie` IS NULL) OR (`Kategorie` = ?)) AND ((? = 1 AND `Evolutionsstufe` IS NULL) OR (`Evolutionsstufe` = ?)) AND ((? = 1 AND `Basispokemon` IS NULL) OR (`Basispokemon` = ?)) AND ((? = 1 AND `Geschlecht` IS NULL) OR (`Geschlecht` = ?)) AND ((? = 1 AND `Fähigkeit` IS NULL) OR (`Fähigkeit` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Pokemon` SET `PokName` = ?, `PokTyp` = ?, `Beschreibung` = ?, `Gewicht` = ?, `Groesse` = ?, `Kategorie` = ?, `Evolutionsstufe` = ?, `Basispokemon` = ?, `Geschlecht` = ?, `Faehigkeit` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `PokName` IS NULL) OR (`PokName` = ?)) AND ((? = 1 AND `PokTyp` IS NULL) OR (`PokTyp` = ?)) AND ((? = 1 AND `Gewicht` IS NULL) OR (`Gewicht` = ?)) AND ((? = 1 AND `Groesse` IS NULL) OR (`Groesse` = ?)) AND ((? = 1 AND `Kategorie` IS NULL) OR (`Kategorie` = ?)) AND ((? = 1 AND `Evolutionsstufe` IS NULL) OR (`Evolutionsstufe` = ?)) AND ((? = 1 AND `Basispokemon` IS NULL) OR (`Basispokemon` = ?)) AND ((? = 1 AND `Geschlecht` IS NULL) OR (`Geschlecht` = ?)) AND ((? = 1 AND `Faehigkeit` IS NULL) OR (`Faehigkeit` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Typ", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Typ", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PokName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokName", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PokTyp", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokTyp", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Beschreibung", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Beschreibung", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gewicht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gewicht", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Größe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Größe", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Groesse", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Groesse", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Kategorie", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kategorie", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Evolutionsstufe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Evolutionsstufe", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Basispokemon", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Basispokemon", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Geschlecht", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Geschlecht", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Fähigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Fähigkeit", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Faehigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Faehigkeit", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Name", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Typ", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Typ", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Typ", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Typ", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PokName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokName", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_PokName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokName", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PokTyp", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokTyp", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_PokTyp", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PokTyp", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Gewicht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gewicht", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Gewicht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gewicht", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Größe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Größe", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Größe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Größe", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Groesse", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Groesse", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Groesse", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Groesse", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Kategorie", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kategorie", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Kategorie", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kategorie", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Evolutionsstufe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Evolutionsstufe", global::System.Data.DataRowVersion.Original, true, null));
@@ -2387,8 +2387,8 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Basispokemon", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Basispokemon", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Geschlecht", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Geschlecht", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Geschlecht", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Geschlecht", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Fähigkeit", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Fähigkeit", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Fähigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Fähigkeit", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Faehigkeit", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Faehigkeit", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Faehigkeit", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Faehigkeit", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2404,8 +2404,8 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Name, Typ, Beschreibung, Gewicht, Größe, Kategorie, Evolutionsstufe, B" +
-                "asispokemon, Geschlecht, Fähigkeit FROM Pokemon";
+            this._commandCollection[0].CommandText = "SELECT ID, PokName, PokTyp, Beschreibung, Gewicht, Groesse, Kategorie, Evolutions" +
+                "stufe, Basispokemon, Geschlecht, Faehigkeit FROM Pokemon";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2466,19 +2466,19 @@ namespace Pokedex.PokedexDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_Name, global::System.Nullable<int> Original_Typ, global::System.Nullable<int> Original_Gewicht, global::System.Nullable<int> Original_Größe, string Original_Kategorie, global::System.Nullable<int> Original_Evolutionsstufe, string Original_Basispokemon, string Original_Geschlecht, string Original_Fähigkeit) {
+        public virtual int Delete(int Original_ID, string Original_PokName, global::System.Nullable<int> Original_PokTyp, global::System.Nullable<int> Original_Gewicht, global::System.Nullable<int> Original_Groesse, string Original_Kategorie, global::System.Nullable<int> Original_Evolutionsstufe, string Original_Basispokemon, string Original_Geschlecht, string Original_Faehigkeit) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_Name == null)) {
+            if ((Original_PokName == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Name));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_PokName));
             }
-            if ((Original_Typ.HasValue == true)) {
+            if ((Original_PokTyp.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_Typ.Value));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_PokTyp.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
@@ -2492,9 +2492,9 @@ namespace Pokedex.PokedexDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Original_Größe.HasValue == true)) {
+            if ((Original_Groesse.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_Größe.Value));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_Groesse.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
@@ -2532,13 +2532,13 @@ namespace Pokedex.PokedexDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_Geschlecht));
             }
-            if ((Original_Fähigkeit == null)) {
+            if ((Original_Faehigkeit == null)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Fähigkeit));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Faehigkeit));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2560,15 +2560,15 @@ namespace Pokedex.PokedexDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Name, global::System.Nullable<int> Typ, string Beschreibung, global::System.Nullable<int> Gewicht, global::System.Nullable<int> Größe, string Kategorie, global::System.Nullable<int> Evolutionsstufe, string Basispokemon, string Geschlecht, string Fähigkeit) {
-            if ((Name == null)) {
+        public virtual int Insert(string PokName, global::System.Nullable<int> PokTyp, string Beschreibung, global::System.Nullable<int> Gewicht, global::System.Nullable<int> Groesse, string Kategorie, global::System.Nullable<int> Evolutionsstufe, string Basispokemon, string Geschlecht, string Faehigkeit) {
+            if ((PokName == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Name));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(PokName));
             }
-            if ((Typ.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Typ.Value));
+            if ((PokTyp.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(PokTyp.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -2585,8 +2585,8 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Größe.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Größe.Value));
+            if ((Groesse.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Groesse.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -2615,11 +2615,11 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Geschlecht));
             }
-            if ((Fähigkeit == null)) {
+            if ((Faehigkeit == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Fähigkeit));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Faehigkeit));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2642,34 +2642,34 @@ namespace Pokedex.PokedexDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string Name, 
-                    global::System.Nullable<int> Typ, 
+                    string PokName, 
+                    global::System.Nullable<int> PokTyp, 
                     string Beschreibung, 
                     global::System.Nullable<int> Gewicht, 
-                    global::System.Nullable<int> Größe, 
+                    global::System.Nullable<int> Groesse, 
                     string Kategorie, 
                     global::System.Nullable<int> Evolutionsstufe, 
                     string Basispokemon, 
                     string Geschlecht, 
-                    string Fähigkeit, 
+                    string Faehigkeit, 
                     int Original_ID, 
-                    string Original_Name, 
-                    global::System.Nullable<int> Original_Typ, 
+                    string Original_PokName, 
+                    global::System.Nullable<int> Original_PokTyp, 
                     global::System.Nullable<int> Original_Gewicht, 
-                    global::System.Nullable<int> Original_Größe, 
+                    global::System.Nullable<int> Original_Groesse, 
                     string Original_Kategorie, 
                     global::System.Nullable<int> Original_Evolutionsstufe, 
                     string Original_Basispokemon, 
                     string Original_Geschlecht, 
-                    string Original_Fähigkeit) {
-            if ((Name == null)) {
+                    string Original_Faehigkeit) {
+            if ((PokName == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Name));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(PokName));
             }
-            if ((Typ.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Typ.Value));
+            if ((PokTyp.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(PokTyp.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -2686,8 +2686,8 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Größe.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Größe.Value));
+            if ((Groesse.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Groesse.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -2716,24 +2716,24 @@ namespace Pokedex.PokedexDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Geschlecht));
             }
-            if ((Fähigkeit == null)) {
+            if ((Faehigkeit == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Fähigkeit));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Faehigkeit));
             }
             this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_ID));
-            if ((Original_Name == null)) {
+            if ((Original_PokName == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Name));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_PokName));
             }
-            if ((Original_Typ.HasValue == true)) {
+            if ((Original_PokTyp.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_Typ.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_PokTyp.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
@@ -2747,9 +2747,9 @@ namespace Pokedex.PokedexDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
-            if ((Original_Größe.HasValue == true)) {
+            if ((Original_Groesse.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_Größe.Value));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_Groesse.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
@@ -2787,13 +2787,13 @@ namespace Pokedex.PokedexDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_Geschlecht));
             }
-            if ((Original_Fähigkeit == null)) {
+            if ((Original_Faehigkeit == null)) {
                 this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_Fähigkeit));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_Faehigkeit));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
