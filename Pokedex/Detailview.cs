@@ -16,6 +16,7 @@ namespace Pokedex
         int PokemonID;
 
         OleDbCommand com;
+        OleDbConnection con;
         public Detailview(int id)
         {
             InitializeComponent();
@@ -39,13 +40,13 @@ namespace Pokedex
         private void setzeBasisAttribute()
         {
             String[] splittedValue;
-            com.CommandText = "SELECT Typ FROM Pokemon p WHERE p.ID = PokeID";
+            com.CommandText = "SELECT * FROM Pokemon"; // WHERE ID = 1";
             com.CommandType = CommandType.Text;
             com.Parameters.AddWithValue("PokeID", PokemonID);
 
             OleDbDataReader rd = com.ExecuteReader();
 
-            splittedValue = splitValue(setValue(rd));
+            splittedValue = splitValue(setValue(rd[0]));
 
             rd.Close();
             rd = null;
@@ -74,7 +75,7 @@ namespace Pokedex
 
         private void aufbaueVerbindung()
         {
-            OleDbConnection con = new OleDbConnection(Properties.Settings.Default.DbPathSchool);
+            con = new OleDbConnection(Properties.Settings.Default.DbPathSchool);
             con.Open();
             com = con.CreateCommand();            
         }
