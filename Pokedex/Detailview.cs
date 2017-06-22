@@ -40,11 +40,12 @@ namespace Pokedex
         {
             String[] splittedValue;
             com.CommandText = "SELECT Typ FROM Pokemon p WHERE p.ID = PokeID";
+            com.CommandType = CommandType.Text;
             com.Parameters.AddWithValue("PokeID", PokemonID);
 
             OleDbDataReader rd = com.ExecuteReader();
 
-            splittedValue = splitValue(setValue(rd.Read()));
+            splittedValue = splitValue(setValue(rd));
 
             rd.Close();
             rd = null;
@@ -54,6 +55,7 @@ namespace Pokedex
             for (int j = 0; j < splittedValue.Length; j++)
             {
                 com.CommandText = "SELECT Typname FROM Typen t WHERE t.ID = TypID";
+                com.CommandType = CommandType.Text;
                 com.Parameters.AddWithValue("PokeID", splittedValue[j]);
 
                 rd = com.ExecuteReader();
