@@ -543,7 +543,7 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PokemonRow AddPokemonRow(string PokName, int PokTyp, string Beschreibung, int Gewicht, int Groesse, string Kategorie, int Evolutionsstufe, string Basispokemon, string Geschlecht, string Faehigkeit) {
+            public PokemonRow AddPokemonRow(string PokName, string PokTyp, string Beschreibung, int Gewicht, int Groesse, string Kategorie, int Evolutionsstufe, string Basispokemon, string Geschlecht, string Faehigkeit) {
                 PokemonRow rowPokemonRow = ((PokemonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -606,7 +606,7 @@ namespace Pokedex {
                 base.Columns.Add(this.columnID);
                 this.columnPokName = new global::System.Data.DataColumn("PokName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPokName);
-                this.columnPokTyp = new global::System.Data.DataColumn("PokTyp", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnPokTyp = new global::System.Data.DataColumn("PokTyp", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPokTyp);
                 this.columnBeschreibung = new global::System.Data.DataColumn("Beschreibung", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBeschreibung);
@@ -1467,10 +1467,10 @@ namespace Pokedex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int PokTyp {
+            public string PokTyp {
                 get {
                     try {
-                        return ((int)(this[this.tablePokemon.PokTypColumn]));
+                        return ((string)(this[this.tablePokemon.PokTypColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Der Wert für Spalte PokTyp in Tabelle Pokemon ist DBNull.", e);

@@ -233,7 +233,7 @@
   <xs:element name="PokedexDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PokedexDataSet" msprop:Generator_UserDSName="PokedexDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Pokemon" msprop:Generator_TableClassName="PokemonDataTable" msprop:Generator_TableVarName="tablePokemon" msprop:Generator_TablePropName="Pokemon" msprop:Generator_RowDeletingName="PokemonRowDeleting" msprop:Generator_RowChangingName="PokemonRowChanging" msprop:Generator_RowEvHandlerName="PokemonRowChangeEventHandler" msprop:Generator_RowDeletedName="PokemonRowDeleted" msprop:Generator_UserTableName="Pokemon" msprop:Generator_RowChangedName="PokemonRowChanged" msprop:Generator_RowEvArgName="PokemonRowChangeEvent" msprop:Generator_RowClassName="PokemonRow">
+        <xs:element name="Pokemon" msprop:Generator_TableClassName="PokemonDataTable" msprop:Generator_TableVarName="tablePokemon" msprop:Generator_RowChangedName="PokemonRowChanged" msprop:Generator_TablePropName="Pokemon" msprop:Generator_RowDeletingName="PokemonRowDeleting" msprop:Generator_RowChangingName="PokemonRowChanging" msprop:Generator_RowEvHandlerName="PokemonRowChangeEventHandler" msprop:Generator_RowDeletedName="PokemonRowDeleted" msprop:Generator_RowClassName="PokemonRow" msprop:Generator_UserTableName="Pokemon" msprop:Generator_RowEvArgName="PokemonRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -244,7 +244,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PokTyp" msprop:Generator_ColumnVarNameInTable="columnPokTyp" msprop:Generator_ColumnPropNameInRow="PokTyp" msprop:Generator_ColumnPropNameInTable="PokTypColumn" msprop:Generator_UserColumnName="PokTyp" type="xs:int" minOccurs="0" />
+              <xs:element name="PokTyp" msprop:Generator_ColumnVarNameInTable="columnPokTyp" msprop:Generator_ColumnPropNameInRow="PokTyp" msprop:Generator_ColumnPropNameInTable="PokTypColumn" msprop:Generator_UserColumnName="PokTyp" type="xs:string" minOccurs="0" />
               <xs:element name="Beschreibung" msprop:Generator_ColumnVarNameInTable="columnBeschreibung" msprop:Generator_ColumnPropNameInRow="Beschreibung" msprop:Generator_ColumnPropNameInTable="BeschreibungColumn" msprop:Generator_UserColumnName="Beschreibung" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -286,7 +286,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Pokemon_Typ" msprop:Generator_TableClassName="Pokemon_TypDataTable" msprop:Generator_TableVarName="tablePokemon_Typ" msprop:Generator_TablePropName="Pokemon_Typ" msprop:Generator_RowDeletingName="Pokemon_TypRowDeleting" msprop:Generator_RowChangingName="Pokemon_TypRowChanging" msprop:Generator_RowEvHandlerName="Pokemon_TypRowChangeEventHandler" msprop:Generator_RowDeletedName="Pokemon_TypRowDeleted" msprop:Generator_UserTableName="Pokemon_Typ" msprop:Generator_RowChangedName="Pokemon_TypRowChanged" msprop:Generator_RowEvArgName="Pokemon_TypRowChangeEvent" msprop:Generator_RowClassName="Pokemon_TypRow">
+        <xs:element name="Pokemon_Typ" msprop:Generator_TableClassName="Pokemon_TypDataTable" msprop:Generator_TableVarName="tablePokemon_Typ" msprop:Generator_RowChangedName="Pokemon_TypRowChanged" msprop:Generator_TablePropName="Pokemon_Typ" msprop:Generator_RowDeletingName="Pokemon_TypRowDeleting" msprop:Generator_RowChangingName="Pokemon_TypRowChanging" msprop:Generator_RowEvHandlerName="Pokemon_TypRowChangeEventHandler" msprop:Generator_RowDeletedName="Pokemon_TypRowDeleted" msprop:Generator_RowClassName="Pokemon_TypRow" msprop:Generator_UserTableName="Pokemon_Typ" msprop:Generator_RowEvArgName="Pokemon_TypRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -295,7 +295,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Typen" msprop:Generator_TableClassName="TypenDataTable" msprop:Generator_TableVarName="tableTypen" msprop:Generator_TablePropName="Typen" msprop:Generator_RowDeletingName="TypenRowDeleting" msprop:Generator_RowChangingName="TypenRowChanging" msprop:Generator_RowEvHandlerName="TypenRowChangeEventHandler" msprop:Generator_RowDeletedName="TypenRowDeleted" msprop:Generator_UserTableName="Typen" msprop:Generator_RowChangedName="TypenRowChanged" msprop:Generator_RowEvArgName="TypenRowChangeEvent" msprop:Generator_RowClassName="TypenRow">
+        <xs:element name="Typen" msprop:Generator_TableClassName="TypenDataTable" msprop:Generator_TableVarName="tableTypen" msprop:Generator_RowChangedName="TypenRowChanged" msprop:Generator_TablePropName="Typen" msprop:Generator_RowDeletingName="TypenRowDeleting" msprop:Generator_RowChangingName="TypenRowChanging" msprop:Generator_RowEvHandlerName="TypenRowChangeEventHandler" msprop:Generator_RowDeletedName="TypenRowDeleted" msprop:Generator_RowClassName="TypenRow" msprop:Generator_UserTableName="Typen" msprop:Generator_RowEvArgName="TypenRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -368,8 +368,8 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="PokemonPokemon_Typ" msdata:parent="Pokemon" msdata:child="Pokemon_Typ" msdata:parentkey="ID" msdata:childkey="PokemonNr" msprop:Generator_UserChildTable="Pokemon_Typ" msprop:Generator_ChildPropName="GetPokemon_TypRows" msprop:Generator_UserRelationName="PokemonPokemon_Typ" msprop:Generator_ParentPropName="PokemonRow" msprop:Generator_RelationVarName="relationPokemonPokemon_Typ" msprop:Generator_UserParentTable="Pokemon" />
-      <msdata:Relationship name="TypenPokemon_Typ" msdata:parent="Typen" msdata:child="Pokemon_Typ" msdata:parentkey="ID" msdata:childkey="TypNr" msprop:Generator_UserChildTable="Pokemon_Typ" msprop:Generator_ChildPropName="GetPokemon_TypRows" msprop:Generator_UserRelationName="TypenPokemon_Typ" msprop:Generator_RelationVarName="relationTypenPokemon_Typ" msprop:Generator_UserParentTable="Typen" msprop:Generator_ParentPropName="TypenRow" />
+      <msdata:Relationship name="PokemonPokemon_Typ" msdata:parent="Pokemon" msdata:child="Pokemon_Typ" msdata:parentkey="ID" msdata:childkey="PokemonNr" msprop:Generator_UserChildTable="Pokemon_Typ" msprop:Generator_ChildPropName="GetPokemon_TypRows" msprop:Generator_UserRelationName="PokemonPokemon_Typ" msprop:Generator_RelationVarName="relationPokemonPokemon_Typ" msprop:Generator_UserParentTable="Pokemon" msprop:Generator_ParentPropName="PokemonRow" />
+      <msdata:Relationship name="TypenPokemon_Typ" msdata:parent="Typen" msdata:child="Pokemon_Typ" msdata:parentkey="ID" msdata:childkey="TypNr" msprop:Generator_UserChildTable="Pokemon_Typ" msprop:Generator_ChildPropName="GetPokemon_TypRows" msprop:Generator_UserRelationName="TypenPokemon_Typ" msprop:Generator_ParentPropName="TypenRow" msprop:Generator_RelationVarName="relationTypenPokemon_Typ" msprop:Generator_UserParentTable="Typen" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

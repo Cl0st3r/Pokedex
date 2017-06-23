@@ -30,6 +30,7 @@ namespace Pokedex
             aufbaueVerbindung();
             setzeBasisAttribute();
             setzeTaktik();
+            this.Focus();
         }
 
         private void setzeTaktik()
@@ -40,12 +41,13 @@ namespace Pokedex
         private void setzeBasisAttribute()
         {
             String[] splittedValue;
-            com.CommandText = "SELECT * FROM Pokemon"; // WHERE ID = 1";
+            com.CommandText = "SELECT PokTyp FROM Pokemon WHERE ID = PokeID";
             com.CommandType = CommandType.Text;
             com.Parameters.AddWithValue("PokeID", PokemonID);
 
             OleDbDataReader rd = com.ExecuteReader();
-
+            rd.Read();
+            
             splittedValue = splitValue(setValue(rd[0]));
 
             rd.Close();
@@ -53,24 +55,28 @@ namespace Pokedex
             com.CommandText = null;
             com.Parameters.Clear();
 
+            com.CommandText = "SELECT Typname FROM Typen WHERE ID = TypID";
+            com.CommandType = CommandType.Text;
             for (int j = 0; j < splittedValue.Length; j++)
             {
-                com.CommandText = "SELECT Typname FROM Typen t WHERE t.ID = TypID";
-                com.CommandType = CommandType.Text;
-                com.Parameters.AddWithValue("PokeID", splittedValue[j]);
+                com.Parameters.AddWithValue("TypID", splittedValue[j]);
 
                 rd = com.ExecuteReader();
+                rd.Read();
 
-                while (rd.Read())
+                if (!string.IsNullOrEmpty(Typ1.Text))
                 {
-                    Typ1.Text = Convert.ToString(setValue(rd));
-                    if (!string.IsNullOrEmpty(Typ1.Text))
-                    {
-                        Typ2.Text = Convert.ToString(setValue(rd));
-                    }
+                    Typ2.Text = Convert.ToString(setValue(rd[0]));
+                }
+                else
+                {
+                    Typ1.Text = Convert.ToString(setValue(rd[0]));
                 }
                 com.Parameters.Clear();
+                rd.Close();
             }
+            rd.Close();
+            rd = null;
         }
 
         private void aufbaueVerbindung()
@@ -82,8 +88,7 @@ namespace Pokedex
 
         private String[] splitValue(object value)
         {
-            String buffer = value.ToString();
-            return buffer.Split(',');
+            return value.ToString().Split(',');
         }
 
         private void ButtonZurück_Click(object sender, EventArgs e)
