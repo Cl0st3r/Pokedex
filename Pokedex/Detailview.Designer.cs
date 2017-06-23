@@ -179,7 +179,7 @@
             this.Ability.Location = new System.Drawing.Point(347, 220);
             this.Ability.Name = "Ability";
             this.Ability.ReadOnly = true;
-            this.Ability.Size = new System.Drawing.Size(108, 20);
+            this.Ability.Size = new System.Drawing.Size(192, 20);
             this.Ability.TabIndex = 10;
             // 
             // Gender

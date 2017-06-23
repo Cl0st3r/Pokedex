@@ -14,9 +14,11 @@ namespace Pokedex
     public partial class Detailview : Form, IsetValue
     {
         int PokemonID;
+        String[] splittedValue;
 
         OleDbCommand com;
         OleDbConnection con;
+        OleDbDataReader rd;
         public Detailview(int id)
         {
             InitializeComponent();
@@ -33,28 +35,28 @@ namespace Pokedex
             this.Focus();
         }
 
-        private void setzeTaktik()
-        {
-            
-        }
-
         private void setzeBasisAttribute()
         {
-            String[] splittedValue;
-            com.CommandText = "SELECT PokTyp FROM Pokemon WHERE ID = PokeID";
+            leseTypenAusDB();
+            schreibeTypenNameninGUI();
+
+            com.CommandText = "SELECT Beschreibung, Gewicht, Groesse, Kategorie, Geschlecht, Faehigkeit FROM Pokemon WHERE ID = PokeID";
             com.CommandType = CommandType.Text;
             com.Parameters.AddWithValue("PokeID", PokemonID);
 
-            OleDbDataReader rd = com.ExecuteReader();
+            rd = com.ExecuteReader();
             rd.Read();
-            
-            splittedValue = splitValue(setValue(rd[0]));
+            int i = 0;
+            Description.Text = Convert.ToString(setValue(rd[i]));
+            Weight.Text = Convert.ToString(setValue(rd[++i]));
+            boxHeight.Text = Convert.ToString(setValue(rd[++i]));
+            Category.Text = Convert.ToString(setValue(rd[++i]));
+            Gender.Text = Convert.ToString(setValue(rd[++i]));
+            Ability.Text = Convert.ToString(setValue(rd[++i]));
+        }
 
-            rd.Close();
-            rd = null;
-            com.CommandText = null;
-            com.Parameters.Clear();
-
+        private void schreibeTypenNameninGUI()
+        {
             com.CommandText = "SELECT Typname FROM Typen WHERE ID = TypID";
             com.CommandType = CommandType.Text;
             for (int j = 0; j < splittedValue.Length; j++)
@@ -78,6 +80,32 @@ namespace Pokedex
             rd.Close();
             rd = null;
         }
+
+        private void leseTypenAusDB()
+        {
+            com.CommandText = "SELECT PokTyp FROM Pokemon WHERE ID = PokeID";
+            com.CommandType = CommandType.Text;
+            com.Parameters.AddWithValue("PokeID", PokemonID);
+
+            rd = com.ExecuteReader();
+            rd.Read();
+
+            splittedValue = splitValue(setValue(rd[0]));
+
+            rd.Close();
+            rd = null;
+            com.CommandText = null;
+            com.Parameters.Clear();
+        }
+
+        private void setzeTaktik()
+        {
+            for(int i = 0; i < splittedValue.Length; i++)
+            {
+                
+            }            
+        }
+
 
         private void aufbaueVerbindung()
         {
