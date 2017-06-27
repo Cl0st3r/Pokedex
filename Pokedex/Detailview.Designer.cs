@@ -43,57 +43,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Typ1 = new System.Windows.Forms.TextBox();
             this.Typ2 = new System.Windows.Forms.TextBox();
-            this.labelImmunities = new System.Windows.Forms.Label();
-            this.Offensive_Immunity1 = new System.Windows.Forms.TextBox();
-            this.Offensive_Immunity2 = new System.Windows.Forms.TextBox();
-            this.Offensive_Immunity3 = new System.Windows.Forms.TextBox();
-            this.Offensive_Immunity4 = new System.Windows.Forms.TextBox();
-            this.Offensive_Immunity5 = new System.Windows.Forms.TextBox();
-            this.labelOffensive = new System.Windows.Forms.Label();
-            this.Offensive_Effektiv5 = new System.Windows.Forms.TextBox();
-            this.Offensive_Effektiv4 = new System.Windows.Forms.TextBox();
-            this.Offensive_Effektiv3 = new System.Windows.Forms.TextBox();
-            this.Offensive_Effektiv2 = new System.Windows.Forms.TextBox();
-            this.Offensive_Effektiv1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Offensive_NEffektiv5 = new System.Windows.Forms.TextBox();
-            this.Offensive_NEffektiv4 = new System.Windows.Forms.TextBox();
-            this.Offensive_NEffektiv3 = new System.Windows.Forms.TextBox();
-            this.Offensive_NEffektiv2 = new System.Windows.Forms.TextBox();
-            this.Offensive_NEffektiv1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Defensive_NEffektiv5 = new System.Windows.Forms.TextBox();
-            this.Defensive_NEffektiv4 = new System.Windows.Forms.TextBox();
-            this.Defensive_NEffektiv3 = new System.Windows.Forms.TextBox();
-            this.Defensive_NEffektiv2 = new System.Windows.Forms.TextBox();
-            this.Defensive_NEffektiv1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Defensive_Effektiv5 = new System.Windows.Forms.TextBox();
-            this.Defensive_Effektiv4 = new System.Windows.Forms.TextBox();
-            this.Defensive_Effektiv3 = new System.Windows.Forms.TextBox();
-            this.Defensive_Effektiv2 = new System.Windows.Forms.TextBox();
-            this.Defensive_Effektiv1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Defensive_Immunity5 = new System.Windows.Forms.TextBox();
-            this.Defensive_Immunity4 = new System.Windows.Forms.TextBox();
-            this.Defensive_Immunity3 = new System.Windows.Forms.TextBox();
-            this.Defensive_Immunity2 = new System.Windows.Forms.TextBox();
-            this.Defensive_Immunity1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.ButtonZurück = new System.Windows.Forms.Button();
-            this.Offensive_Effektiv6 = new System.Windows.Forms.TextBox();
-            this.Offensive_Effektiv7 = new System.Windows.Forms.TextBox();
-            this.Offensive_NEffektiv6 = new System.Windows.Forms.TextBox();
-            this.Offensive_NEffektiv7 = new System.Windows.Forms.TextBox();
-            this.Offensive_Immunity6 = new System.Windows.Forms.TextBox();
-            this.Offensive_Immunity7 = new System.Windows.Forms.TextBox();
-            this.Defensive_Effektiv6 = new System.Windows.Forms.TextBox();
-            this.Defensive_Effektiv7 = new System.Windows.Forms.TextBox();
-            this.Defensive_NEffektiv6 = new System.Windows.Forms.TextBox();
-            this.Defensive_NEffektiv7 = new System.Windows.Forms.TextBox();
-            this.Defensive_Immunity6 = new System.Windows.Forms.TextBox();
-            this.Defensive_Immunity7 = new System.Windows.Forms.TextBox();
+            this.labelSchwaechen = new System.Windows.Forms.Label();
+            this.Schwaeche1 = new System.Windows.Forms.TextBox();
+            this.Schwaeche2 = new System.Windows.Forms.TextBox();
+            this.Schwaeche3 = new System.Windows.Forms.TextBox();
+            this.Schwaeche4 = new System.Windows.Forms.TextBox();
+            this.Schwaeche5 = new System.Windows.Forms.TextBox();
+            this.Schwaeche6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Appearance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,318 +181,6 @@
             this.Typ2.Size = new System.Drawing.Size(100, 20);
             this.Typ2.TabIndex = 15;
             // 
-            // labelImmunities
-            // 
-            this.labelImmunities.AutoSize = true;
-            this.labelImmunities.Location = new System.Drawing.Point(15, 412);
-            this.labelImmunities.Name = "labelImmunities";
-            this.labelImmunities.Size = new System.Drawing.Size(65, 13);
-            this.labelImmunities.TabIndex = 16;
-            this.labelImmunities.Text = "Resistenzen";
-            // 
-            // Offensive_Immunity1
-            // 
-            this.Offensive_Immunity1.Location = new System.Drawing.Point(18, 428);
-            this.Offensive_Immunity1.Name = "Offensive_Immunity1";
-            this.Offensive_Immunity1.ReadOnly = true;
-            this.Offensive_Immunity1.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity1.TabIndex = 17;
-            // 
-            // Offensive_Immunity2
-            // 
-            this.Offensive_Immunity2.Location = new System.Drawing.Point(124, 428);
-            this.Offensive_Immunity2.Name = "Offensive_Immunity2";
-            this.Offensive_Immunity2.ReadOnly = true;
-            this.Offensive_Immunity2.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity2.TabIndex = 18;
-            // 
-            // Offensive_Immunity3
-            // 
-            this.Offensive_Immunity3.Location = new System.Drawing.Point(230, 428);
-            this.Offensive_Immunity3.Name = "Offensive_Immunity3";
-            this.Offensive_Immunity3.ReadOnly = true;
-            this.Offensive_Immunity3.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity3.TabIndex = 19;
-            // 
-            // Offensive_Immunity4
-            // 
-            this.Offensive_Immunity4.Location = new System.Drawing.Point(336, 428);
-            this.Offensive_Immunity4.Name = "Offensive_Immunity4";
-            this.Offensive_Immunity4.ReadOnly = true;
-            this.Offensive_Immunity4.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity4.TabIndex = 20;
-            // 
-            // Offensive_Immunity5
-            // 
-            this.Offensive_Immunity5.Location = new System.Drawing.Point(442, 428);
-            this.Offensive_Immunity5.Name = "Offensive_Immunity5";
-            this.Offensive_Immunity5.ReadOnly = true;
-            this.Offensive_Immunity5.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity5.TabIndex = 21;
-            // 
-            // labelOffensive
-            // 
-            this.labelOffensive.AutoSize = true;
-            this.labelOffensive.Location = new System.Drawing.Point(15, 304);
-            this.labelOffensive.Name = "labelOffensive";
-            this.labelOffensive.Size = new System.Drawing.Size(52, 13);
-            this.labelOffensive.TabIndex = 22;
-            this.labelOffensive.Text = "Offensive";
-            // 
-            // Offensive_Effektiv5
-            // 
-            this.Offensive_Effektiv5.Location = new System.Drawing.Point(442, 345);
-            this.Offensive_Effektiv5.Name = "Offensive_Effektiv5";
-            this.Offensive_Effektiv5.ReadOnly = true;
-            this.Offensive_Effektiv5.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv5.TabIndex = 28;
-            // 
-            // Offensive_Effektiv4
-            // 
-            this.Offensive_Effektiv4.Location = new System.Drawing.Point(336, 345);
-            this.Offensive_Effektiv4.Name = "Offensive_Effektiv4";
-            this.Offensive_Effektiv4.ReadOnly = true;
-            this.Offensive_Effektiv4.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv4.TabIndex = 27;
-            // 
-            // Offensive_Effektiv3
-            // 
-            this.Offensive_Effektiv3.Location = new System.Drawing.Point(230, 345);
-            this.Offensive_Effektiv3.Name = "Offensive_Effektiv3";
-            this.Offensive_Effektiv3.ReadOnly = true;
-            this.Offensive_Effektiv3.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv3.TabIndex = 26;
-            // 
-            // Offensive_Effektiv2
-            // 
-            this.Offensive_Effektiv2.Location = new System.Drawing.Point(124, 345);
-            this.Offensive_Effektiv2.Name = "Offensive_Effektiv2";
-            this.Offensive_Effektiv2.ReadOnly = true;
-            this.Offensive_Effektiv2.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv2.TabIndex = 25;
-            // 
-            // Offensive_Effektiv1
-            // 
-            this.Offensive_Effektiv1.Location = new System.Drawing.Point(18, 345);
-            this.Offensive_Effektiv1.Name = "Offensive_Effektiv1";
-            this.Offensive_Effektiv1.ReadOnly = true;
-            this.Offensive_Effektiv1.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv1.TabIndex = 24;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 329);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Effektiv";
-            // 
-            // Offensive_NEffektiv5
-            // 
-            this.Offensive_NEffektiv5.Location = new System.Drawing.Point(442, 391);
-            this.Offensive_NEffektiv5.Name = "Offensive_NEffektiv5";
-            this.Offensive_NEffektiv5.ReadOnly = true;
-            this.Offensive_NEffektiv5.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv5.TabIndex = 34;
-            // 
-            // Offensive_NEffektiv4
-            // 
-            this.Offensive_NEffektiv4.Location = new System.Drawing.Point(336, 391);
-            this.Offensive_NEffektiv4.Name = "Offensive_NEffektiv4";
-            this.Offensive_NEffektiv4.ReadOnly = true;
-            this.Offensive_NEffektiv4.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv4.TabIndex = 33;
-            // 
-            // Offensive_NEffektiv3
-            // 
-            this.Offensive_NEffektiv3.Location = new System.Drawing.Point(230, 391);
-            this.Offensive_NEffektiv3.Name = "Offensive_NEffektiv3";
-            this.Offensive_NEffektiv3.ReadOnly = true;
-            this.Offensive_NEffektiv3.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv3.TabIndex = 32;
-            // 
-            // Offensive_NEffektiv2
-            // 
-            this.Offensive_NEffektiv2.Location = new System.Drawing.Point(124, 391);
-            this.Offensive_NEffektiv2.Name = "Offensive_NEffektiv2";
-            this.Offensive_NEffektiv2.ReadOnly = true;
-            this.Offensive_NEffektiv2.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv2.TabIndex = 31;
-            // 
-            // Offensive_NEffektiv1
-            // 
-            this.Offensive_NEffektiv1.Location = new System.Drawing.Point(18, 391);
-            this.Offensive_NEffektiv1.Name = "Offensive_NEffektiv1";
-            this.Offensive_NEffektiv1.ReadOnly = true;
-            this.Offensive_NEffektiv1.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv1.TabIndex = 30;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 375);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Nicht Effektiv";
-            // 
-            // Defensive_NEffektiv5
-            // 
-            this.Defensive_NEffektiv5.Location = new System.Drawing.Point(442, 552);
-            this.Defensive_NEffektiv5.Name = "Defensive_NEffektiv5";
-            this.Defensive_NEffektiv5.ReadOnly = true;
-            this.Defensive_NEffektiv5.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv5.TabIndex = 53;
-            // 
-            // Defensive_NEffektiv4
-            // 
-            this.Defensive_NEffektiv4.Location = new System.Drawing.Point(336, 552);
-            this.Defensive_NEffektiv4.Name = "Defensive_NEffektiv4";
-            this.Defensive_NEffektiv4.ReadOnly = true;
-            this.Defensive_NEffektiv4.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv4.TabIndex = 52;
-            // 
-            // Defensive_NEffektiv3
-            // 
-            this.Defensive_NEffektiv3.Location = new System.Drawing.Point(230, 552);
-            this.Defensive_NEffektiv3.Name = "Defensive_NEffektiv3";
-            this.Defensive_NEffektiv3.ReadOnly = true;
-            this.Defensive_NEffektiv3.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv3.TabIndex = 51;
-            // 
-            // Defensive_NEffektiv2
-            // 
-            this.Defensive_NEffektiv2.Location = new System.Drawing.Point(124, 552);
-            this.Defensive_NEffektiv2.Name = "Defensive_NEffektiv2";
-            this.Defensive_NEffektiv2.ReadOnly = true;
-            this.Defensive_NEffektiv2.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv2.TabIndex = 50;
-            // 
-            // Defensive_NEffektiv1
-            // 
-            this.Defensive_NEffektiv1.Location = new System.Drawing.Point(18, 552);
-            this.Defensive_NEffektiv1.Name = "Defensive_NEffektiv1";
-            this.Defensive_NEffektiv1.ReadOnly = true;
-            this.Defensive_NEffektiv1.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv1.TabIndex = 49;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 536);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
-            this.label4.TabIndex = 48;
-            this.label4.Text = "Nicht Effektiv";
-            // 
-            // Defensive_Effektiv5
-            // 
-            this.Defensive_Effektiv5.Location = new System.Drawing.Point(442, 506);
-            this.Defensive_Effektiv5.Name = "Defensive_Effektiv5";
-            this.Defensive_Effektiv5.ReadOnly = true;
-            this.Defensive_Effektiv5.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv5.TabIndex = 47;
-            // 
-            // Defensive_Effektiv4
-            // 
-            this.Defensive_Effektiv4.Location = new System.Drawing.Point(336, 506);
-            this.Defensive_Effektiv4.Name = "Defensive_Effektiv4";
-            this.Defensive_Effektiv4.ReadOnly = true;
-            this.Defensive_Effektiv4.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv4.TabIndex = 46;
-            // 
-            // Defensive_Effektiv3
-            // 
-            this.Defensive_Effektiv3.Location = new System.Drawing.Point(230, 506);
-            this.Defensive_Effektiv3.Name = "Defensive_Effektiv3";
-            this.Defensive_Effektiv3.ReadOnly = true;
-            this.Defensive_Effektiv3.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv3.TabIndex = 45;
-            // 
-            // Defensive_Effektiv2
-            // 
-            this.Defensive_Effektiv2.Location = new System.Drawing.Point(124, 506);
-            this.Defensive_Effektiv2.Name = "Defensive_Effektiv2";
-            this.Defensive_Effektiv2.ReadOnly = true;
-            this.Defensive_Effektiv2.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv2.TabIndex = 44;
-            // 
-            // Defensive_Effektiv1
-            // 
-            this.Defensive_Effektiv1.Location = new System.Drawing.Point(18, 506);
-            this.Defensive_Effektiv1.Name = "Defensive_Effektiv1";
-            this.Defensive_Effektiv1.ReadOnly = true;
-            this.Defensive_Effektiv1.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv1.TabIndex = 43;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 490);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Effektiv";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 465);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 13);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "Defensive";
-            // 
-            // Defensive_Immunity5
-            // 
-            this.Defensive_Immunity5.Location = new System.Drawing.Point(442, 591);
-            this.Defensive_Immunity5.Name = "Defensive_Immunity5";
-            this.Defensive_Immunity5.ReadOnly = true;
-            this.Defensive_Immunity5.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity5.TabIndex = 40;
-            // 
-            // Defensive_Immunity4
-            // 
-            this.Defensive_Immunity4.Location = new System.Drawing.Point(336, 591);
-            this.Defensive_Immunity4.Name = "Defensive_Immunity4";
-            this.Defensive_Immunity4.ReadOnly = true;
-            this.Defensive_Immunity4.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity4.TabIndex = 39;
-            // 
-            // Defensive_Immunity3
-            // 
-            this.Defensive_Immunity3.Location = new System.Drawing.Point(230, 591);
-            this.Defensive_Immunity3.Name = "Defensive_Immunity3";
-            this.Defensive_Immunity3.ReadOnly = true;
-            this.Defensive_Immunity3.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity3.TabIndex = 38;
-            // 
-            // Defensive_Immunity2
-            // 
-            this.Defensive_Immunity2.Location = new System.Drawing.Point(124, 591);
-            this.Defensive_Immunity2.Name = "Defensive_Immunity2";
-            this.Defensive_Immunity2.ReadOnly = true;
-            this.Defensive_Immunity2.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity2.TabIndex = 37;
-            // 
-            // Defensive_Immunity1
-            // 
-            this.Defensive_Immunity1.Location = new System.Drawing.Point(18, 591);
-            this.Defensive_Immunity1.Name = "Defensive_Immunity1";
-            this.Defensive_Immunity1.ReadOnly = true;
-            this.Defensive_Immunity1.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity1.TabIndex = 36;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 575);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 35;
-            this.label7.Text = "Immun";
-            // 
             // ButtonZurück
             // 
             this.ButtonZurück.Location = new System.Drawing.Point(18, 617);
@@ -546,158 +191,70 @@
             this.ButtonZurück.UseVisualStyleBackColor = true;
             this.ButtonZurück.Click += new System.EventHandler(this.ButtonZurück_Click);
             // 
-            // Offensive_Effektiv6
+            // labelSchwaechen
             // 
-            this.Offensive_Effektiv6.Location = new System.Drawing.Point(548, 345);
-            this.Offensive_Effektiv6.Name = "Offensive_Effektiv6";
-            this.Offensive_Effektiv6.ReadOnly = true;
-            this.Offensive_Effektiv6.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv6.TabIndex = 55;
+            this.labelSchwaechen.AutoSize = true;
+            this.labelSchwaechen.Location = new System.Drawing.Point(15, 309);
+            this.labelSchwaechen.Name = "labelSchwaechen";
+            this.labelSchwaechen.Size = new System.Drawing.Size(64, 13);
+            this.labelSchwaechen.TabIndex = 55;
+            this.labelSchwaechen.Text = "Schwächen";
             // 
-            // Offensive_Effektiv7
+            // Schwaeche1
             // 
-            this.Offensive_Effektiv7.Location = new System.Drawing.Point(654, 345);
-            this.Offensive_Effektiv7.Name = "Offensive_Effektiv7";
-            this.Offensive_Effektiv7.ReadOnly = true;
-            this.Offensive_Effektiv7.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Effektiv7.TabIndex = 56;
+            this.Schwaeche1.Location = new System.Drawing.Point(18, 325);
+            this.Schwaeche1.Name = "Schwaeche1";
+            this.Schwaeche1.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche1.TabIndex = 56;
             // 
-            // Offensive_NEffektiv6
+            // Schwaeche2
             // 
-            this.Offensive_NEffektiv6.Location = new System.Drawing.Point(548, 391);
-            this.Offensive_NEffektiv6.Name = "Offensive_NEffektiv6";
-            this.Offensive_NEffektiv6.ReadOnly = true;
-            this.Offensive_NEffektiv6.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv6.TabIndex = 57;
+            this.Schwaeche2.Location = new System.Drawing.Point(124, 325);
+            this.Schwaeche2.Name = "Schwaeche2";
+            this.Schwaeche2.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche2.TabIndex = 57;
             // 
-            // Offensive_NEffektiv7
+            // Schwaeche3
             // 
-            this.Offensive_NEffektiv7.Location = new System.Drawing.Point(654, 391);
-            this.Offensive_NEffektiv7.Name = "Offensive_NEffektiv7";
-            this.Offensive_NEffektiv7.ReadOnly = true;
-            this.Offensive_NEffektiv7.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_NEffektiv7.TabIndex = 58;
+            this.Schwaeche3.Location = new System.Drawing.Point(230, 325);
+            this.Schwaeche3.Name = "Schwaeche3";
+            this.Schwaeche3.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche3.TabIndex = 58;
             // 
-            // Offensive_Immunity6
+            // Schwaeche4
             // 
-            this.Offensive_Immunity6.Location = new System.Drawing.Point(548, 428);
-            this.Offensive_Immunity6.Name = "Offensive_Immunity6";
-            this.Offensive_Immunity6.ReadOnly = true;
-            this.Offensive_Immunity6.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity6.TabIndex = 59;
+            this.Schwaeche4.Location = new System.Drawing.Point(336, 325);
+            this.Schwaeche4.Name = "Schwaeche4";
+            this.Schwaeche4.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche4.TabIndex = 59;
             // 
-            // Offensive_Immunity7
+            // Schwaeche5
             // 
-            this.Offensive_Immunity7.Location = new System.Drawing.Point(654, 428);
-            this.Offensive_Immunity7.Name = "Offensive_Immunity7";
-            this.Offensive_Immunity7.ReadOnly = true;
-            this.Offensive_Immunity7.Size = new System.Drawing.Size(100, 20);
-            this.Offensive_Immunity7.TabIndex = 60;
+            this.Schwaeche5.Location = new System.Drawing.Point(442, 325);
+            this.Schwaeche5.Name = "Schwaeche5";
+            this.Schwaeche5.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche5.TabIndex = 60;
             // 
-            // Defensive_Effektiv6
+            // Schwaeche6
             // 
-            this.Defensive_Effektiv6.Location = new System.Drawing.Point(548, 506);
-            this.Defensive_Effektiv6.Name = "Defensive_Effektiv6";
-            this.Defensive_Effektiv6.ReadOnly = true;
-            this.Defensive_Effektiv6.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv6.TabIndex = 61;
-            // 
-            // Defensive_Effektiv7
-            // 
-            this.Defensive_Effektiv7.Location = new System.Drawing.Point(654, 506);
-            this.Defensive_Effektiv7.Name = "Defensive_Effektiv7";
-            this.Defensive_Effektiv7.ReadOnly = true;
-            this.Defensive_Effektiv7.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Effektiv7.TabIndex = 62;
-            // 
-            // Defensive_NEffektiv6
-            // 
-            this.Defensive_NEffektiv6.Location = new System.Drawing.Point(548, 552);
-            this.Defensive_NEffektiv6.Name = "Defensive_NEffektiv6";
-            this.Defensive_NEffektiv6.ReadOnly = true;
-            this.Defensive_NEffektiv6.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv6.TabIndex = 63;
-            // 
-            // Defensive_NEffektiv7
-            // 
-            this.Defensive_NEffektiv7.Location = new System.Drawing.Point(654, 552);
-            this.Defensive_NEffektiv7.Name = "Defensive_NEffektiv7";
-            this.Defensive_NEffektiv7.ReadOnly = true;
-            this.Defensive_NEffektiv7.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_NEffektiv7.TabIndex = 64;
-            // 
-            // Defensive_Immunity6
-            // 
-            this.Defensive_Immunity6.Location = new System.Drawing.Point(548, 591);
-            this.Defensive_Immunity6.Name = "Defensive_Immunity6";
-            this.Defensive_Immunity6.ReadOnly = true;
-            this.Defensive_Immunity6.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity6.TabIndex = 65;
-            // 
-            // Defensive_Immunity7
-            // 
-            this.Defensive_Immunity7.Location = new System.Drawing.Point(654, 591);
-            this.Defensive_Immunity7.Name = "Defensive_Immunity7";
-            this.Defensive_Immunity7.ReadOnly = true;
-            this.Defensive_Immunity7.Size = new System.Drawing.Size(100, 20);
-            this.Defensive_Immunity7.TabIndex = 66;
+            this.Schwaeche6.Location = new System.Drawing.Point(548, 325);
+            this.Schwaeche6.Name = "Schwaeche6";
+            this.Schwaeche6.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche6.TabIndex = 61;
             // 
             // Detailview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 680);
-            this.Controls.Add(this.Defensive_Immunity7);
-            this.Controls.Add(this.Defensive_Immunity6);
-            this.Controls.Add(this.Defensive_NEffektiv7);
-            this.Controls.Add(this.Defensive_NEffektiv6);
-            this.Controls.Add(this.Defensive_Effektiv7);
-            this.Controls.Add(this.Defensive_Effektiv6);
-            this.Controls.Add(this.Offensive_Immunity7);
-            this.Controls.Add(this.Offensive_Immunity6);
-            this.Controls.Add(this.Offensive_NEffektiv7);
-            this.Controls.Add(this.Offensive_NEffektiv6);
-            this.Controls.Add(this.Offensive_Effektiv7);
-            this.Controls.Add(this.Offensive_Effektiv6);
+            this.Controls.Add(this.Schwaeche6);
+            this.Controls.Add(this.Schwaeche5);
+            this.Controls.Add(this.Schwaeche4);
+            this.Controls.Add(this.Schwaeche3);
+            this.Controls.Add(this.Schwaeche2);
+            this.Controls.Add(this.Schwaeche1);
+            this.Controls.Add(this.labelSchwaechen);
             this.Controls.Add(this.ButtonZurück);
-            this.Controls.Add(this.Defensive_NEffektiv5);
-            this.Controls.Add(this.Defensive_NEffektiv4);
-            this.Controls.Add(this.Defensive_NEffektiv3);
-            this.Controls.Add(this.Defensive_NEffektiv2);
-            this.Controls.Add(this.Defensive_NEffektiv1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Defensive_Effektiv5);
-            this.Controls.Add(this.Defensive_Effektiv4);
-            this.Controls.Add(this.Defensive_Effektiv3);
-            this.Controls.Add(this.Defensive_Effektiv2);
-            this.Controls.Add(this.Defensive_Effektiv1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.Defensive_Immunity5);
-            this.Controls.Add(this.Defensive_Immunity4);
-            this.Controls.Add(this.Defensive_Immunity3);
-            this.Controls.Add(this.Defensive_Immunity2);
-            this.Controls.Add(this.Defensive_Immunity1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.Offensive_NEffektiv5);
-            this.Controls.Add(this.Offensive_NEffektiv4);
-            this.Controls.Add(this.Offensive_NEffektiv3);
-            this.Controls.Add(this.Offensive_NEffektiv2);
-            this.Controls.Add(this.Offensive_NEffektiv1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Offensive_Effektiv5);
-            this.Controls.Add(this.Offensive_Effektiv4);
-            this.Controls.Add(this.Offensive_Effektiv3);
-            this.Controls.Add(this.Offensive_Effektiv2);
-            this.Controls.Add(this.Offensive_Effektiv1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.labelOffensive);
-            this.Controls.Add(this.Offensive_Immunity5);
-            this.Controls.Add(this.Offensive_Immunity4);
-            this.Controls.Add(this.Offensive_Immunity3);
-            this.Controls.Add(this.Offensive_Immunity2);
-            this.Controls.Add(this.Offensive_Immunity1);
-            this.Controls.Add(this.labelImmunities);
             this.Controls.Add(this.Typ2);
             this.Controls.Add(this.Typ1);
             this.Controls.Add(this.label1);
@@ -738,56 +295,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Typ1;
         private System.Windows.Forms.TextBox Typ2;
-        private System.Windows.Forms.Label labelImmunities;
-        private System.Windows.Forms.TextBox Offensive_Immunity1;
-        private System.Windows.Forms.TextBox Offensive_Immunity2;
-        private System.Windows.Forms.TextBox Offensive_Immunity3;
-        private System.Windows.Forms.TextBox Offensive_Immunity4;
-        private System.Windows.Forms.TextBox Offensive_Immunity5;
-        private System.Windows.Forms.Label labelOffensive;
-        private System.Windows.Forms.TextBox Offensive_Effektiv5;
-        private System.Windows.Forms.TextBox Offensive_Effektiv4;
-        private System.Windows.Forms.TextBox Offensive_Effektiv3;
-        private System.Windows.Forms.TextBox Offensive_Effektiv2;
-        private System.Windows.Forms.TextBox Offensive_Effektiv1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv5;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv4;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv3;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv2;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv5;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv4;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv3;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv2;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Defensive_Effektiv5;
-        private System.Windows.Forms.TextBox Defensive_Effektiv4;
-        private System.Windows.Forms.TextBox Defensive_Effektiv3;
-        private System.Windows.Forms.TextBox Defensive_Effektiv2;
-        private System.Windows.Forms.TextBox Defensive_Effektiv1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox Defensive_Immunity5;
-        private System.Windows.Forms.TextBox Defensive_Immunity4;
-        private System.Windows.Forms.TextBox Defensive_Immunity3;
-        private System.Windows.Forms.TextBox Defensive_Immunity2;
-        private System.Windows.Forms.TextBox Defensive_Immunity1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button ButtonZurück;
-        private System.Windows.Forms.TextBox Offensive_Effektiv6;
-        private System.Windows.Forms.TextBox Offensive_Effektiv7;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv6;
-        private System.Windows.Forms.TextBox Offensive_NEffektiv7;
-        private System.Windows.Forms.TextBox Offensive_Immunity6;
-        private System.Windows.Forms.TextBox Offensive_Immunity7;
-        private System.Windows.Forms.TextBox Defensive_Effektiv6;
-        private System.Windows.Forms.TextBox Defensive_Effektiv7;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv6;
-        private System.Windows.Forms.TextBox Defensive_NEffektiv7;
-        private System.Windows.Forms.TextBox Defensive_Immunity6;
-        private System.Windows.Forms.TextBox Defensive_Immunity7;
+        private System.Windows.Forms.Label labelSchwaechen;
+        private System.Windows.Forms.TextBox Schwaeche1;
+        private System.Windows.Forms.TextBox Schwaeche2;
+        private System.Windows.Forms.TextBox Schwaeche3;
+        private System.Windows.Forms.TextBox Schwaeche4;
+        private System.Windows.Forms.TextBox Schwaeche5;
+        private System.Windows.Forms.TextBox Schwaeche6;
     }
 }
