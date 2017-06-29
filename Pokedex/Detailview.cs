@@ -43,9 +43,11 @@ namespace Pokedex
             com.CommandText = "SELECT PokePic FROM Pokemon WHERE ID = PokeID";
             com.Parameters.AddWithValue("PokeID", PokemonID);
 
-            rd = com.ExecuteReader();
+            rd = com.ExecuteReader(CommandBehavior.SequentialAccess);
             rd.Read();
-            byte[] imageBytes = (byte[])rd[0];
+
+            object t = rd[0];
+            byte[] imageBytes = (byte[])t;
 
             MemoryStream ms = new MemoryStream();
             ms.Write(imageBytes, 0, imageBytes.Length);
