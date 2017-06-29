@@ -28,9 +28,30 @@ namespace Pokedex.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Maximilian\\Downloads\\Poked" +
             "ex.accdb")]
-        public string DbPath {
+        public string DbPathHome {
             get {
-                return ((string)(this["DbPath"]));
+                return ((string)(this["DbPathHome"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"H:\\Eigene Dateien\\DB\\Pokedex.accdb" +
+            "\"")]
+        public string DbPathSchool {
+            get {
+                return ((string)(this["DbPathSchool"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\Pokedex.accdb")]
+        public string PokedexConnectionString {
+            get {
+                return ((string)(this["PokedexConnectionString"]));
             }
         }
     }

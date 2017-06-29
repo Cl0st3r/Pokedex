@@ -8,6 +8,6 @@ namespace Pokedex
 {
     interface IsetValue
     {
-        void setValue(object obj);
+        object setValue(object obj);
     }
 }

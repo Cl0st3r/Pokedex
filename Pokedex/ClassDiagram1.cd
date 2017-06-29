@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pokedex.Detailview" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="Ability" Hidden="true" />
+      <Field Name="Appearance" Hidden="true" />
+      <Field Name="boxHeight" Hidden="true" />
+      <Field Name="ButtonZurück" Hidden="true" />
+      <Field Name="Category" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="Description" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="Gender" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="labelAbility" Hidden="true" />
+      <Field Name="labelCategory" Hidden="true" />
+      <Field Name="labelGender" Hidden="true" />
+      <Field Name="labelGröße" Hidden="true" />
+      <Field Name="labelPokemon" Hidden="true" />
+      <Field Name="labelSchwaechen" Hidden="true" />
+      <Field Name="labelWeight" Hidden="true" />
+      <Field Name="Schwaeche1" Hidden="true" />
+      <Field Name="Schwaeche2" Hidden="true" />
+      <Field Name="Schwaeche3" Hidden="true" />
+      <Field Name="Schwaeche4" Hidden="true" />
+      <Field Name="Schwaeche5" Hidden="true" />
+      <Field Name="Schwaeche6" Hidden="true" />
+      <Field Name="Schwaeche7" Hidden="true" />
+      <Field Name="Typ1" Hidden="true" />
+      <Field Name="Typ2" Hidden="true" />
+      <Field Name="Weight" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>D4iSAAQEACIgAhKEBAOEEQACASAACAEACEBAMAAACNg=</HashCode>
+      <FileName>Detailview.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pokedex.MainForm">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAgACAAAAAAAACAEAASAQgAAAAAAAAAAAEAQAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pokedex.IsetValue">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IsetValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
