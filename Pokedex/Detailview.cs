@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,20 +20,37 @@ namespace Pokedex
         OleDbCommand com;
         OleDbConnection con;
         OleDbDataReader rd;
-        public Detailview(int id)
+        public Detailview(int id, string name)
         {
             InitializeComponent();
             this.Visible = true;
             this.PokemonID = id;
+            labelPokemon.Text = name;
             fuelleAnsicht();            
         }
 
         private void fuelleAnsicht()
         {
             aufbaueVerbindung();
+            setzeBild();
             setzeBasisAttribute();
             setzeTaktik();
             this.Focus();
+        }
+
+        private void setzeBild()
+        {
+            com.CommandText = "SELECT PokePic FROM Pokemon WHERE ID = PokeID";
+            com.Parameters.AddWithValue("PokeID", PokemonID);
+
+            rd = com.ExecuteReader();
+            rd.Read();
+            byte[] imageBytes = (byte[])rd[0];
+
+            MemoryStream ms = new MemoryStream();
+            ms.Write(imageBytes, 0, imageBytes.Length);
+            Bitmap bmp = new Bitmap(ms);
+            Appearance.Image = bmp;
         }
 
         private void setzeBasisAttribute()

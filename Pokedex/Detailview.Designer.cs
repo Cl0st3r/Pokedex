@@ -52,12 +52,13 @@
             this.Schwaeche6 = new System.Windows.Forms.TextBox();
             this.Schwaeche7 = new System.Windows.Forms.TextBox();
             this.ButtonZurück = new System.Windows.Forms.Button();
+            this.labelPokemon = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Appearance)).BeginInit();
             this.SuspendLayout();
             // 
             // Appearance
             // 
-            this.Appearance.Location = new System.Drawing.Point(18, 25);
+            this.Appearance.Location = new System.Drawing.Point(18, 56);
             this.Appearance.Name = "Appearance";
             this.Appearance.Size = new System.Drawing.Size(238, 215);
             this.Appearance.TabIndex = 0;
@@ -66,7 +67,7 @@
             // labelGröße
             // 
             this.labelGröße.AutoSize = true;
-            this.labelGröße.Location = new System.Drawing.Point(272, 152);
+            this.labelGröße.Location = new System.Drawing.Point(272, 183);
             this.labelGröße.Name = "labelGröße";
             this.labelGröße.Size = new System.Drawing.Size(36, 13);
             this.labelGröße.TabIndex = 2;
@@ -74,7 +75,7 @@
             // 
             // Description
             // 
-            this.Description.Location = new System.Drawing.Point(275, 25);
+            this.Description.Location = new System.Drawing.Point(275, 56);
             this.Description.Multiline = true;
             this.Description.Name = "Description";
             this.Description.ReadOnly = true;
@@ -83,7 +84,7 @@
             // 
             // boxHeight
             // 
-            this.boxHeight.Location = new System.Drawing.Point(275, 168);
+            this.boxHeight.Location = new System.Drawing.Point(275, 199);
             this.boxHeight.Name = "boxHeight";
             this.boxHeight.ReadOnly = true;
             this.boxHeight.Size = new System.Drawing.Size(33, 20);
@@ -92,7 +93,7 @@
             // labelCategory
             // 
             this.labelCategory.AutoSize = true;
-            this.labelCategory.Location = new System.Drawing.Point(344, 152);
+            this.labelCategory.Location = new System.Drawing.Point(344, 183);
             this.labelCategory.Name = "labelCategory";
             this.labelCategory.Size = new System.Drawing.Size(52, 13);
             this.labelCategory.TabIndex = 5;
@@ -100,7 +101,7 @@
             // 
             // Category
             // 
-            this.Category.Location = new System.Drawing.Point(347, 168);
+            this.Category.Location = new System.Drawing.Point(347, 199);
             this.Category.Name = "Category";
             this.Category.ReadOnly = true;
             this.Category.Size = new System.Drawing.Size(108, 20);
@@ -108,7 +109,7 @@
             // 
             // Weight
             // 
-            this.Weight.Location = new System.Drawing.Point(275, 220);
+            this.Weight.Location = new System.Drawing.Point(275, 251);
             this.Weight.Name = "Weight";
             this.Weight.ReadOnly = true;
             this.Weight.Size = new System.Drawing.Size(44, 20);
@@ -117,7 +118,7 @@
             // labelWeight
             // 
             this.labelWeight.AutoSize = true;
-            this.labelWeight.Location = new System.Drawing.Point(273, 204);
+            this.labelWeight.Location = new System.Drawing.Point(273, 235);
             this.labelWeight.Name = "labelWeight";
             this.labelWeight.Size = new System.Drawing.Size(46, 13);
             this.labelWeight.TabIndex = 8;
@@ -126,7 +127,7 @@
             // labelAbility
             // 
             this.labelAbility.AutoSize = true;
-            this.labelAbility.Location = new System.Drawing.Point(344, 204);
+            this.labelAbility.Location = new System.Drawing.Point(344, 235);
             this.labelAbility.Name = "labelAbility";
             this.labelAbility.Size = new System.Drawing.Size(50, 13);
             this.labelAbility.TabIndex = 9;
@@ -134,7 +135,7 @@
             // 
             // Ability
             // 
-            this.Ability.Location = new System.Drawing.Point(347, 220);
+            this.Ability.Location = new System.Drawing.Point(347, 251);
             this.Ability.Name = "Ability";
             this.Ability.ReadOnly = true;
             this.Ability.Size = new System.Drawing.Size(192, 20);
@@ -142,7 +143,7 @@
             // 
             // Gender
             // 
-            this.Gender.Location = new System.Drawing.Point(476, 168);
+            this.Gender.Location = new System.Drawing.Point(476, 199);
             this.Gender.Name = "Gender";
             this.Gender.ReadOnly = true;
             this.Gender.Size = new System.Drawing.Size(63, 20);
@@ -151,7 +152,7 @@
             // labelGender
             // 
             this.labelGender.AutoSize = true;
-            this.labelGender.Location = new System.Drawing.Point(474, 152);
+            this.labelGender.Location = new System.Drawing.Point(474, 183);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(61, 13);
             this.labelGender.TabIndex = 12;
@@ -160,7 +161,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 252);
+            this.label1.Location = new System.Drawing.Point(15, 283);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 13;
@@ -168,7 +169,7 @@
             // 
             // Typ1
             // 
-            this.Typ1.Location = new System.Drawing.Point(18, 268);
+            this.Typ1.Location = new System.Drawing.Point(18, 299);
             this.Typ1.Name = "Typ1";
             this.Typ1.ReadOnly = true;
             this.Typ1.Size = new System.Drawing.Size(100, 20);
@@ -176,7 +177,7 @@
             // 
             // Typ2
             // 
-            this.Typ2.Location = new System.Drawing.Point(135, 268);
+            this.Typ2.Location = new System.Drawing.Point(135, 299);
             this.Typ2.Name = "Typ2";
             this.Typ2.ReadOnly = true;
             this.Typ2.Size = new System.Drawing.Size(100, 20);
@@ -185,7 +186,7 @@
             // labelSchwaechen
             // 
             this.labelSchwaechen.AutoSize = true;
-            this.labelSchwaechen.Location = new System.Drawing.Point(15, 309);
+            this.labelSchwaechen.Location = new System.Drawing.Point(15, 340);
             this.labelSchwaechen.Name = "labelSchwaechen";
             this.labelSchwaechen.Size = new System.Drawing.Size(64, 13);
             this.labelSchwaechen.TabIndex = 55;
@@ -193,7 +194,7 @@
             // 
             // Schwaeche1
             // 
-            this.Schwaeche1.Location = new System.Drawing.Point(18, 325);
+            this.Schwaeche1.Location = new System.Drawing.Point(18, 356);
             this.Schwaeche1.Name = "Schwaeche1";
             this.Schwaeche1.ReadOnly = true;
             this.Schwaeche1.Size = new System.Drawing.Size(100, 20);
@@ -201,7 +202,7 @@
             // 
             // Schwaeche2
             // 
-            this.Schwaeche2.Location = new System.Drawing.Point(124, 325);
+            this.Schwaeche2.Location = new System.Drawing.Point(124, 356);
             this.Schwaeche2.Name = "Schwaeche2";
             this.Schwaeche2.ReadOnly = true;
             this.Schwaeche2.Size = new System.Drawing.Size(100, 20);
@@ -209,7 +210,7 @@
             // 
             // Schwaeche3
             // 
-            this.Schwaeche3.Location = new System.Drawing.Point(230, 325);
+            this.Schwaeche3.Location = new System.Drawing.Point(230, 356);
             this.Schwaeche3.Name = "Schwaeche3";
             this.Schwaeche3.ReadOnly = true;
             this.Schwaeche3.Size = new System.Drawing.Size(100, 20);
@@ -217,7 +218,7 @@
             // 
             // Schwaeche4
             // 
-            this.Schwaeche4.Location = new System.Drawing.Point(336, 325);
+            this.Schwaeche4.Location = new System.Drawing.Point(336, 356);
             this.Schwaeche4.Name = "Schwaeche4";
             this.Schwaeche4.ReadOnly = true;
             this.Schwaeche4.Size = new System.Drawing.Size(100, 20);
@@ -225,7 +226,7 @@
             // 
             // Schwaeche5
             // 
-            this.Schwaeche5.Location = new System.Drawing.Point(442, 325);
+            this.Schwaeche5.Location = new System.Drawing.Point(442, 356);
             this.Schwaeche5.Name = "Schwaeche5";
             this.Schwaeche5.ReadOnly = true;
             this.Schwaeche5.Size = new System.Drawing.Size(100, 20);
@@ -233,7 +234,7 @@
             // 
             // Schwaeche6
             // 
-            this.Schwaeche6.Location = new System.Drawing.Point(548, 325);
+            this.Schwaeche6.Location = new System.Drawing.Point(548, 356);
             this.Schwaeche6.Name = "Schwaeche6";
             this.Schwaeche6.ReadOnly = true;
             this.Schwaeche6.Size = new System.Drawing.Size(100, 20);
@@ -241,7 +242,7 @@
             // 
             // Schwaeche7
             // 
-            this.Schwaeche7.Location = new System.Drawing.Point(654, 325);
+            this.Schwaeche7.Location = new System.Drawing.Point(654, 356);
             this.Schwaeche7.Name = "Schwaeche7";
             this.Schwaeche7.ReadOnly = true;
             this.Schwaeche7.Size = new System.Drawing.Size(100, 20);
@@ -257,11 +258,21 @@
             this.ButtonZurück.UseVisualStyleBackColor = true;
             this.ButtonZurück.Click += new System.EventHandler(this.ButtonZurück_Click);
             // 
+            // labelPokemon
+            // 
+            this.labelPokemon.AutoSize = true;
+            this.labelPokemon.Location = new System.Drawing.Point(23, 17);
+            this.labelPokemon.Name = "labelPokemon";
+            this.labelPokemon.Size = new System.Drawing.Size(67, 13);
+            this.labelPokemon.TabIndex = 63;
+            this.labelPokemon.Text = "Lorem Ipsum";
+            // 
             // Detailview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 472);
+            this.Controls.Add(this.labelPokemon);
             this.Controls.Add(this.Schwaeche7);
             this.Controls.Add(this.Schwaeche6);
             this.Controls.Add(this.Schwaeche5);
@@ -320,5 +331,6 @@
         private System.Windows.Forms.TextBox Schwaeche6;
         private System.Windows.Forms.TextBox Schwaeche7;
         private System.Windows.Forms.Button ButtonZurück;
+        private System.Windows.Forms.Label labelPokemon;
     }
 }

@@ -26,21 +26,6 @@ namespace Pokedex
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridView dgv = sender as DataGridView;
-
-            if (dgv == null)
-            {
-                MessageBox.Show("Fehler beim Finden!");
-                return;
-            }
-            //i'll do my stuff.
-            //MessageBox.Show("Gefunden mit" + dgv.CurrentRow.Cells[0].Value);
-
-            new Detailview(Convert.ToInt16(dgv.CurrentRow.Cells[0].Value));
-        }
-
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView dgv = sender as DataGridView;
@@ -53,7 +38,7 @@ namespace Pokedex
             //i'll do my stuff.
             //MessageBox.Show("Gefunden mit" + dgv.CurrentRow.Cells[0].Value);
 
-            new Detailview(Convert.ToInt16(dgv.CurrentRow.Cells[0].Value));
+            new Detailview(Convert.ToInt16(dgv.CurrentRow.Cells[0].Value), Convert.ToString(dgv.CurrentRow.Cells[1].Value));
         }
     }
 }
