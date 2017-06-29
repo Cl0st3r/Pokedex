@@ -51,6 +51,7 @@
             this.Schwaeche4 = new System.Windows.Forms.TextBox();
             this.Schwaeche5 = new System.Windows.Forms.TextBox();
             this.Schwaeche6 = new System.Windows.Forms.TextBox();
+            this.Schwaeche7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Appearance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,7 +184,7 @@
             // 
             // ButtonZurück
             // 
-            this.ButtonZurück.Location = new System.Drawing.Point(18, 617);
+            this.ButtonZurück.Location = new System.Drawing.Point(18, 426);
             this.ButtonZurück.Name = "ButtonZurück";
             this.ButtonZurück.Size = new System.Drawing.Size(118, 23);
             this.ButtonZurück.TabIndex = 54;
@@ -248,11 +249,20 @@
             this.Schwaeche6.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche6.TabIndex = 61;
             // 
+            // Schwaeche7
+            // 
+            this.Schwaeche7.Location = new System.Drawing.Point(654, 325);
+            this.Schwaeche7.Name = "Schwaeche7";
+            this.Schwaeche7.ReadOnly = true;
+            this.Schwaeche7.Size = new System.Drawing.Size(100, 20);
+            this.Schwaeche7.TabIndex = 62;
+            // 
             // Detailview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 680);
+            this.ClientSize = new System.Drawing.Size(840, 472);
+            this.Controls.Add(this.Schwaeche7);
             this.Controls.Add(this.Schwaeche6);
             this.Controls.Add(this.Schwaeche5);
             this.Controls.Add(this.Schwaeche4);
@@ -310,5 +320,6 @@
         private System.Windows.Forms.TextBox Schwaeche4;
         private System.Windows.Forms.TextBox Schwaeche5;
         private System.Windows.Forms.TextBox Schwaeche6;
+        private System.Windows.Forms.TextBox Schwaeche7;
     }
 }

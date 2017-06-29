@@ -31,14 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pokedexDataSet = new Pokedex.PokedexDataSet();
-            this.pokedexDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pokemonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pokemonTableAdapter = new Pokedex.PokedexDataSetTableAdapters.PokemonTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pokNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,26 +48,21 @@
             this.iDDataGridViewTextBoxColumn,
             this.pokNameDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.pokemonBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(258, 288);
+            this.dataGridView1.Size = new System.Drawing.Size(261, 470);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // pokedexDataSet
             // 
             this.pokedexDataSet.DataSetName = "PokedexDataSet";
             this.pokedexDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pokedexDataSetBindingSource
-            // 
-            this.pokedexDataSetBindingSource.DataSource = this.pokedexDataSet;
-            this.pokedexDataSetBindingSource.Position = 0;
-            // 
             // pokemonBindingSource
             // 
             this.pokemonBindingSource.DataMember = "Pokemon";
-            this.pokemonBindingSource.DataSource = this.pokedexDataSetBindingSource;
+            this.pokemonBindingSource.DataSource = this.pokedexDataSet;
             // 
             // pokemonTableAdapter
             // 
@@ -91,14 +84,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 330);
+            this.ClientSize = new System.Drawing.Size(285, 514);
             this.Controls.Add(this.dataGridView1);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokedexDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -107,7 +99,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource pokedexDataSetBindingSource;
         private PokedexDataSet pokedexDataSet;
         private System.Windows.Forms.BindingSource pokemonBindingSource;
         private PokedexDataSetTableAdapters.PokemonTableAdapter pokemonTableAdapter;

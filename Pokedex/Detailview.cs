@@ -135,6 +135,14 @@ namespace Pokedex
                                 {
                                     if (!string.IsNullOrEmpty(Schwaeche6.Text))
                                     {
+                                        if(!String.IsNullOrEmpty(Schwaeche7.Text))
+                                        {
+
+                                        }
+                                        else
+                                        {
+                                            Schwaeche7.Text = Convert.ToString(setValue(rd[0]));
+                                        }
 
                                     }
                                     else
@@ -166,15 +174,26 @@ namespace Pokedex
                 {
                     Schwaeche1.Text = Convert.ToString(setValue(rd[0]));
                 }
+                rd.Close();
                 com.Parameters.Clear();
                 com.CommandText = null;
+
             }
         }
 
         private void aufbaueVerbindung()
         {
             con = new OleDbConnection(Properties.Settings.Default.DbPathSchool);
-            con.Open();
+            try
+            {
+                con.Open();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("DB existiert nicht!");
+                Dispose();
+                return;
+            }
             com = con.CreateCommand();            
         }
 
