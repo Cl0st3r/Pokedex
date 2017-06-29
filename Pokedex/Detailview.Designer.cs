@@ -43,7 +43,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Typ1 = new System.Windows.Forms.TextBox();
             this.Typ2 = new System.Windows.Forms.TextBox();
-            this.ButtonZurück = new System.Windows.Forms.Button();
             this.labelSchwaechen = new System.Windows.Forms.Label();
             this.Schwaeche1 = new System.Windows.Forms.TextBox();
             this.Schwaeche2 = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             this.Schwaeche5 = new System.Windows.Forms.TextBox();
             this.Schwaeche6 = new System.Windows.Forms.TextBox();
             this.Schwaeche7 = new System.Windows.Forms.TextBox();
+            this.ButtonZurück = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Appearance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -182,16 +182,6 @@
             this.Typ2.Size = new System.Drawing.Size(100, 20);
             this.Typ2.TabIndex = 15;
             // 
-            // ButtonZurück
-            // 
-            this.ButtonZurück.Location = new System.Drawing.Point(18, 426);
-            this.ButtonZurück.Name = "ButtonZurück";
-            this.ButtonZurück.Size = new System.Drawing.Size(118, 23);
-            this.ButtonZurück.TabIndex = 54;
-            this.ButtonZurück.Text = "Zurück zur Übersicht";
-            this.ButtonZurück.UseVisualStyleBackColor = true;
-            this.ButtonZurück.Click += new System.EventHandler(this.ButtonZurück_Click);
-            // 
             // labelSchwaechen
             // 
             this.labelSchwaechen.AutoSize = true;
@@ -257,6 +247,16 @@
             this.Schwaeche7.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche7.TabIndex = 62;
             // 
+            // ButtonZurück
+            // 
+            this.ButtonZurück.Location = new System.Drawing.Point(18, 426);
+            this.ButtonZurück.Name = "ButtonZurück";
+            this.ButtonZurück.Size = new System.Drawing.Size(118, 23);
+            this.ButtonZurück.TabIndex = 54;
+            this.ButtonZurück.Text = "Zurück zur Übersicht";
+            this.ButtonZurück.UseVisualStyleBackColor = true;
+            this.ButtonZurück.Click += new System.EventHandler(this.ButtonZurück_Click);
+            // 
             // Detailview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,7 +286,6 @@
             this.Controls.Add(this.Description);
             this.Controls.Add(this.labelGröße);
             this.Controls.Add(this.Appearance);
-            this.Enabled = false;
             this.Name = "Detailview";
             this.Text = "Detailview";
             ((System.ComponentModel.ISupportInitialize)(this.Appearance)).EndInit();
@@ -312,7 +311,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Typ1;
         private System.Windows.Forms.TextBox Typ2;
-        private System.Windows.Forms.Button ButtonZurück;
         private System.Windows.Forms.Label labelSchwaechen;
         private System.Windows.Forms.TextBox Schwaeche1;
         private System.Windows.Forms.TextBox Schwaeche2;
@@ -321,5 +319,6 @@
         private System.Windows.Forms.TextBox Schwaeche5;
         private System.Windows.Forms.TextBox Schwaeche6;
         private System.Windows.Forms.TextBox Schwaeche7;
+        private System.Windows.Forms.Button ButtonZurück;
     }
 }

@@ -191,7 +191,6 @@ namespace Pokedex
             catch(Exception)
             {
                 MessageBox.Show("DB existiert nicht!");
-                Dispose();
                 return;
             }
             com = con.CreateCommand();            
