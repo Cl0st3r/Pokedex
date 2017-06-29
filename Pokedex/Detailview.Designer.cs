@@ -204,6 +204,7 @@
             // 
             this.Schwaeche1.Location = new System.Drawing.Point(18, 325);
             this.Schwaeche1.Name = "Schwaeche1";
+            this.Schwaeche1.ReadOnly = true;
             this.Schwaeche1.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche1.TabIndex = 56;
             // 
@@ -211,6 +212,7 @@
             // 
             this.Schwaeche2.Location = new System.Drawing.Point(124, 325);
             this.Schwaeche2.Name = "Schwaeche2";
+            this.Schwaeche2.ReadOnly = true;
             this.Schwaeche2.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche2.TabIndex = 57;
             // 
@@ -218,6 +220,7 @@
             // 
             this.Schwaeche3.Location = new System.Drawing.Point(230, 325);
             this.Schwaeche3.Name = "Schwaeche3";
+            this.Schwaeche3.ReadOnly = true;
             this.Schwaeche3.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche3.TabIndex = 58;
             // 
@@ -225,6 +228,7 @@
             // 
             this.Schwaeche4.Location = new System.Drawing.Point(336, 325);
             this.Schwaeche4.Name = "Schwaeche4";
+            this.Schwaeche4.ReadOnly = true;
             this.Schwaeche4.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche4.TabIndex = 59;
             // 
@@ -232,6 +236,7 @@
             // 
             this.Schwaeche5.Location = new System.Drawing.Point(442, 325);
             this.Schwaeche5.Name = "Schwaeche5";
+            this.Schwaeche5.ReadOnly = true;
             this.Schwaeche5.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche5.TabIndex = 60;
             // 
@@ -239,6 +244,7 @@
             // 
             this.Schwaeche6.Location = new System.Drawing.Point(548, 325);
             this.Schwaeche6.Name = "Schwaeche6";
+            this.Schwaeche6.ReadOnly = true;
             this.Schwaeche6.Size = new System.Drawing.Size(100, 20);
             this.Schwaeche6.TabIndex = 61;
             // 
@@ -270,6 +276,7 @@
             this.Controls.Add(this.Description);
             this.Controls.Add(this.labelGröße);
             this.Controls.Add(this.Appearance);
+            this.Enabled = false;
             this.Name = "Detailview";
             this.Text = "Detailview";
             ((System.ComponentModel.ISupportInitialize)(this.Appearance)).EndInit();
